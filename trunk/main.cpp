@@ -11,7 +11,7 @@
 #include <string>
 #include <fstream>
 #include <iostream>
-
+#include "graphBogoss.hpp"
 
 
 using namespace std;
