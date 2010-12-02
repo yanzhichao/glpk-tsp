@@ -34,8 +34,7 @@ OBJECTDIR=build/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/graph.o \
-	${OBJECTDIR}/newmain.o
+	${OBJECTDIR}/graphBogoss.o
 
 
 # C Compiler Flags
@@ -67,15 +66,10 @@ ${OBJECTDIR}/main.o: main.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
 
-${OBJECTDIR}/graph.o: graph.cpp 
+${OBJECTDIR}/graphBogoss.o: graphBogoss.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/graph.o graph.cpp
-
-${OBJECTDIR}/newmain.o: newmain.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/newmain.o newmain.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/graphBogoss.o graphBogoss.cpp
 
 # Subprojects
 .build-subprojects:
